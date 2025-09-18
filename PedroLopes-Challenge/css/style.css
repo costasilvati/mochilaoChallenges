@@ -23,13 +23,13 @@
     margin-bottom: 2rem;
     }
 
-    .container h1 {
+    .container h2 {
     font-size: 2rem;
     color: #1c3761;
     margin-bottom: 1rem;
     }
 
-    .container p {
+    .container h3 {
     color: #2d456b;
     font-weight: 600;
     margin: 0.5rem 0;
