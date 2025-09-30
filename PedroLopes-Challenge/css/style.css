@@ -37,11 +37,14 @@
     }
 
     .container span {
-    display: block;
+    display: inline-block;
     margin: 1rem 0 2rem;
     font-weight: bold;
     color: #2d456b;
     font-size: 1.3rem;
+    }
+    .container div{
+        display: inline;
     }
 
     .container input {
@@ -55,7 +58,8 @@
     font-size: 1.1rem;
     }
 
-    .container input[type="submit"] {
+    .container button {
+    width: 90%;
     background-color: #1c3761;
     color: white;
     font-weight: bold;

@@ -39,9 +39,12 @@
             </svg>
             <h2>Treine a sua Lógica</h2>
             <h3>Qual o proximo número:</h3>
-            <span id="sequencia-logica"><strong>SEQUENCIA LOGICA</strong> ...</span>
-            <form action="index.js" method="post">
+            <span><div id="sequencia-logica"></div>, ...</span>
+
+            <div id="formulario-usuario">
+
                 <label for="resposta-user"></label>
+
                 <input
                 type="number"
                 name="resposta-user"
@@ -51,10 +54,11 @@
                 required
                 />
 
-                <input type="submit" name="enviar-resposta-user" value="Enviar" />
-            </form>
+                <button id="sendBtn" name="enviar-resposta-user">Enviar</button>
             </div>
-        </main>
         </div>
+    </main>
+        </div>
+        <script src="index.js"></script>
     </body>
     </html>
