@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>PUZZLE DRAG E DROP</title>
+  <script src="index.js" defer></script>
+</head>
+
+<body>
+  <div class="apresentacao">
+    <h1>Monte a frase!</h1>
+    <p>Arraste as palavras para formar e desobrir a frase!</p>
+  </div>
+
+  <div class="desafio">
+    <div class="conteudo" id="pecas_desafio">
+      <h2>Peças</h2>
+
+      <div class="card">
+
+        <!-- <div class="peca" id="peca-3" draggable="true">PROGRAMAR</div> -->
+        <!--Tag draggable é utilizado para arrastar o elemento -->
+        <!-- <div class="peca" id="peca-1" draggable="true">EU</div> -->
+        <!-- <div class="peca" id="peca-2" draggable="true">AMO</div> -->
+      </div>
+    </div>
+    
+    <div class="conteudo" id="solucao">
+      <h2>Solução</h2>
+      <div class="card-drop">
+        <!-- <div class="drop_zone"></div>
+        <div class="drop_zone"></div>
+        <div class="drop_zone"></div> -->
+      </div>
+    </div>
+  </div>
+
+  <p id="feedback"></p>
+
+  <button class="botao">Checar</button>
+</body>
+
+</html>
