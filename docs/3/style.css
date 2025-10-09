@@ -1,0 +1,105 @@
+body{
+  font-family: sans-serif;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 100vh; /*É uma unidade relativa à altura da janela de visualização (navegador). 1vh é 1% da altura da janela visível, 100vh é a altura total da janela.*/
+  margin: 0;
+}
+
+.apresentacao {
+  text-align: center;
+  display: grid;
+  gap: 2rem;
+}
+
+.desafio{
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: 1.25rem;
+}
+
+.conteudo{
+  background-color: #e9e9e9;
+  border: 0.13rem solid #ccc;
+  border-radius: 15px;
+  padding: 1.25rem;
+  width: 12.5rem;
+  min-height: 15.625rem;
+}
+
+h2{
+  text-align: center;
+  margin-top: 0;
+  color: #555;
+}
+
+.peca{
+  background-color: #4a90e2;
+  color: white;
+  padding: 0.93rem;
+  margin: 0.625rem 0;
+  border: 0.125rem solid #357ebd;
+  border-radius: 5px;
+  cursor: grab; /*Indica que o item pode ser pego*/
+  text-align: center;
+  font-weight: bold;
+}
+
+.peca.dragging {
+  opacity: 0.5;
+  cursor: grabbing; /*mouse segurando*/
+}
+
+.drop_zone {
+  background-color: white;
+  border: 0.125rem dashed #aaa; /*borda picotada*/
+  border-radius: 5%;
+  height: 3.75rem;
+  margin: 0.625rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.drop_zone.hover {
+  background-color: #d4edda;
+  border-color: #28a745;
+}
+
+.botao {
+  padding: 1rem 2rem;
+  background-color: #ccc;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  font-size: 1.3rem;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out
+ }
+
+.botao:hover {
+  background-color: #4a90e2;
+}
+
+#feedback {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 15px;
+  transition: opacity 0.3s ease;
+}
+
+.success {
+  color: green;
+}
+
+.error {
+  color: red;
+}
+
+footer{
+  margin-top: 2rem;
+}

@@ -6,6 +6,8 @@ let arrayResposta = [
     [2, 4, 8, 10, 20, 22]         // Alterna *2 e +2
 ];
 
+let desafios = 0;
+
 window.onload = function() {
     let responseButton = document.getElementById("sendBtn");
     let numAleatorio = Math.floor(Math.random() * arrayResposta.length);
@@ -17,14 +19,19 @@ window.onload = function() {
     responseButton.addEventListener("click", () => {
         // Pega o valor digitado pelo usuário
         let numUser = Number(document.getElementById("resposta-user").value);
-
         // Compara com o último número da sequência
         if (numUser !== arrayResposta[numAleatorio][5]) {
             alert("Resposta incorreta! Tente novamente.");
-            window.location.reload();
+            desafios++;
+            //window.location.reload();
         } else {
             alert("Parabéns! Você acertou.");
+            //window.location.reload();
+        }
+        if(desafios < 5){
             window.location.reload();
+        }else{
+            document.getElementById("sequencia-logica").textContent = "Você completou 5 desafios! Parabéns!!";
         }
     });
 }

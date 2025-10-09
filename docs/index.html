@@ -1,1 +1,58 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <title>Desafios | Início</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root { color-scheme: light dark; }
+    body {
+      margin: 0; min-height: 100svh; display: grid; place-items: center;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: radial-gradient(1200px 600px at 80% -10%, #e7f0ff 0, transparent 60%) #f7f7f7;
+    }
+    .card {
+      background: white; padding: 28px 32px; border-radius: 16px;
+      box-shadow: 0 8px 30px rgba(0,0,0,.08); text-align: center; max-width: 540px;
+      border: 1px solid rgba(0,0,0,.06);
+    }
+    h1 { margin: 0 0 8px; font-size: 1.6rem; }
+    p { margin: 0 0 20px; color: #444; }
+    button {
+      appearance: none; border: 0; border-radius: 12px; padding: 14px 22px;
+      font-weight: 700; font-size: 1rem; cursor: pointer;
+      background: #2563eb; color: #fff; transition: transform .05s ease, filter .15s ease;
+    }
+    button:hover { filter: brightness(1.05); }
+    button:active { transform: translateY(1px); }
+    .row { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+    .muted { color: #666; font-size: .9rem; }
+    .small { font-size: .85rem; }
+    .hidden { display: none; }
+    .pill {
+      display: inline-block; padding: 4px 10px; border-radius: 999px;
+      background: #eef2ff; color: #3730a3; font-weight: 600; margin-left: 6px;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <h1>Desafios de Lógica <span class="pill">v1</span></h1>
+    <p>Quando estiver pronta, clique abaixo para ir a um desafio aleatório.</p>
+
+    <div class="row" style="margin-bottom:12px">
+      <button id="playBtn">🎮 Vamos jogar!</button>
+      <button id="nextBtn" class="hidden">Ir para o próximo da fila</button>
+    </div>
+
+    <p id="status" class="muted small"></p>
+
+    <noscript>
+      <p style="color:#b91c1c"><strong>Ative o JavaScript</strong> para iniciar os desafios.</p>
+    </noscript>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
